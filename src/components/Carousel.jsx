@@ -1,22 +1,22 @@
 import { useState, useEffect } from "react";
-import slide1 from "../assets/pexels-karolina-grabowska-7195310.jpg";
-import slide2 from "../assets/pexels-tima-miroshnichenko-8376277.jpg";
-import slide3 from "../assets/pexels-tima-miroshnichenko-5407238.jpg";
+import slide1 from "../assets/slider 2 - NCHS.png";
+import slide2 from "../assets/cardiology1.png";
+import slide3 from "../assets/webbanner1.png";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const slides = [
   {
     image: slide1,
-    text: "Welcome to the home of quality and affordable health care services.",
+    // text: "Welcome to the home of quality and affordable health care services.",
   },
   {
     image: slide2,
-    text: "ur deserunt vel animi hic totam autem, corrupti aliquid facere incidunt itaque culpa reiciendis.",
+    // text: "ur deserunt vel animi hic totam autem, corrupti aliquid facere incidunt itaque culpa reiciendis.",
   },
   {
     image: slide3,
-    text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta libero ciendis.",
+    // text: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos dicta libero ciendis.",
   },
 ];
 
@@ -37,14 +37,14 @@ function Carousel() {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full   mx-auto max-w-2xl-hidden   shadow-lg">
+    <div className="relative w-full   mx-auto max-w-2xl-hidden ">
       <AnimatePresence mode="wait">
         <motion.img
           key={currentIndex}
           src={slides[currentIndex].image}
           alt="Slide"
           rounded-2xl
-          className="w-full h-64 lg:h-dvh object-cover"
+          className=" h-64 lg:h-dvh object-cover"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}
@@ -62,13 +62,23 @@ function Carousel() {
         </motion.h2>
       </div>
       <button
-        className="absolute left-2 top-1/2 transform -translate-y-1/2   text-grey-800 p-2 rounded-full shadow-lg"
+        className="absolute left-2 top-1/2 transform -translate-y-1/2   text-[#36a8eb] p-2 rounded-full shadow-lg"
         onClick={prevSlide}
       >
+        <div className="absolute inset-0     bg-transparent flex items-center justify-center">
+          <motion.h2
+            className="text-grey-800 text-2xl font-bold"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            {slides[currentIndex].text}
+          </motion.h2>
+        </div>
         <ChevronLeft size={24} />
       </button>
       <button
-        className="absolute right-2 top-1/2 transform -translate-y-1/2   text-gray-800 p-2 rounded-full shadow-lg"
+        className="absolute right-2 top-1/2 transform -translate-y-1/2   text-[#36a8eb] p-2 rounded-full shadow-lg"
         onClick={nextSlide}
       >
         <ChevronRight size={24} />

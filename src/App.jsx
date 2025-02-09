@@ -6,7 +6,7 @@ import OtherServices from "./components/OtherServices";
 import ServicesUi from "./UI/ServicesUi";
 import servicesImage from "./assets/website_700x700_service.png";
 import AboutUs from "./components/AboutUs";
-import PhilosophySection from "./components/ PhilosophySection";
+// import PhilosophySection from "./components/ PhilosophySection";
 import NewsSection from "./components/NewsSection";
 import Footer from "./components/Footer";
 import TestimonialCarousel from "./components/TestimonialSection";
@@ -15,7 +15,6 @@ function App() {
     <>
       <body>
         <NavBar />
-
         <div className="flex flex-col items-center justify-center">
           <CarouselComponent />
           <FirstAbout />
@@ -31,7 +30,7 @@ function App() {
           textClass="lg:w-[50%] lg:ml-40"
         />
         <AboutUs />
-        <PhilosophySection />
+        {/* <PhilosophySection /> */}
         <TestimonialCarousel />
         <NewsSection />
         <Footer />
