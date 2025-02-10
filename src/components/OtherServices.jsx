@@ -90,7 +90,7 @@ const OtherServices = () => {
 
   return (
     <div className="bg-gray-50 py-10 ">
-      <div className="lg:w-[50%] w-full m-auto my-5 mx-2">
+      <div className="lg:w-[50%] w-full lg:m-auto my-5 mx-2">
         <h2 className="text-2xl lg-text-4xl font-bold text-gray-800 text-center">
           Comprehensive Healthcare Services
         </h2>
