@@ -90,8 +90,8 @@ const OtherServices = () => {
 
   return (
     <div className="bg-gray-50 py-10 ">
-      <div className="w-[50%] m-auto my-5">
-        <h2 className="text-4xl font-bold text-gray-800 text-center">
+      <div className="lg:w-[50%] w-full m-auto my-5 mx-2">
+        <h2 className="text-2xl lg-text-4xl font-bold text-gray-800 text-center">
           Comprehensive Healthcare Services
         </h2>
         <p className="text-primary m-2  text-center">
@@ -100,7 +100,7 @@ const OtherServices = () => {
           with advanced medical technologies.
         </p>
       </div>
-      <div className="container w-[80%] mx-auto px-4">
+      <div className="container w-full lg:w-[80%] mx-auto px-4">
         <Slider {...settings}>
           {services.map((service, index) => (
             <div

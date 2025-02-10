@@ -25,9 +25,9 @@ function App() {
           title="Revolutionizing Patient Treatment"
           description1="At New Crystal Hospital, we prioritize the latest advancements and best practices in medical treatment. Our innovative approach ensures that you receive the highest quality care tailored to your unique needs. From cutting-edge technology to personalized treatment plans, we strive to enhance your health and well-being through continuous improvement and compassionate care."
           image={servicesImage}
-          className="flex flex-col-reverse items-center w-full gap-8 lg:flex-row-reverse"
+          className="flex flex-col-reverse items-center w-full m-auto gap-8 lg:flex-row-reverse"
           ImgClass="w-[80%]"
-          textClass="lg:w-[50%] lg:ml-40"
+          textClass="lg:w-[50%] w-full lg:ml-40 m-auto"
         />
         <AboutUs />
         {/* <PhilosophySection /> */}

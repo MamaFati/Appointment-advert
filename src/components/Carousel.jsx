@@ -37,14 +37,14 @@ function Carousel() {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full   mx-auto max-w-2xl-hidden ">
+    <div className="relative w-full mt-16  mx-auto max-w-2xl-hidden ">
       <AnimatePresence mode="wait">
         <motion.img
           key={currentIndex}
           src={slides[currentIndex].image}
           alt="Slide"
           rounded-2xl
-          className=" h-64 lg:h-dvh object-cover"
+          className=" md:h-dvh lg:h-dvh   object-fit-cover"
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}

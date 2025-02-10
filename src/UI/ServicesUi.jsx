@@ -15,7 +15,7 @@ const ServiceCard = ({
         <img src={image} alt={title} className={` ${ImgClass}`} />
       </div>
       <div className={`${textClass}`}>
-        <h3 className="text-5xl   text-grey-800 mb-3">{title}</h3>
+        <h3 className="text-2xl   text-grey-800 mb-3">{title}</h3>
         <p className="text-gray-700 mb-3">{description1}</p>
         <p className="text-gray-700">{description2}</p>
       </div>

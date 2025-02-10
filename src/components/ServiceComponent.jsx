@@ -4,7 +4,7 @@ function ServiceComponent() {
   return (
     <div>
       <ServicesUi
-        className={"flex flex-col gap-6 items-center lg:flex-row"}
+        className={"flex flex-col w-[90%] gap-6 items-center lg:flex-row"}
         image={servicesImage}
         title="Advanced Care, Personalized for You."
         description1="At New Crystal Health, we offer comprehensive medical solutions all in one place. Our services are designed to meet all your healthcare needs with utmost efficiency and care."

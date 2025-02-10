@@ -66,18 +66,18 @@ const TestimonialSection = () => {
 
   return (
     <div className="m-auto py-10 px-5 bg-[#f8f9fb] w-full">
-      <div className="text-center w-[50%] m-auto">
+      <div className="text-center w-full lg:w-[50%] m-auto">
         <h2 className="text-3xl font-bold mb-5">What Our Patients Say</h2>
         <p className="text-primary text-lg">
           Hear from our patients about their experiences at New Crystal
           Hospital. We are committed to providing exceptional care and support.
         </p>
       </div>
-      <div className="w-[80%] m-auto">
+      <div className="w-full lg:w-[80%] m-auto">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="p-4 container">
-              <div className="bg-white shadow-lg rounded-lg p-6 w-[470px] text-center">
+              <div className="bg-white shadow-lg rounded-lg p-6 w-fit   text-center">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
