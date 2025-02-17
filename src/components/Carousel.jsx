@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import slide1 from "../assets/slider 2 - NCHS.png";
-import slide2 from "../assets/cardiology1.png";
+import slide2 from "../assets/P9.jpg";
 import slide3 from "../assets/webbanner1.png";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";

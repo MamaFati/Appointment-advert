@@ -1,7 +1,7 @@
 import "react";
 import image1 from "../assets/cssd.png";
-import image2 from "../assets/familyNews.png";
-import image3 from "../assets/new2.jpg";
+import image2 from "../assets/P8.jpg";
+import image3 from "../assets/Mental Health.jpg";
 
 const News = () => {
   const newsItems = [

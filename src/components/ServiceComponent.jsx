@@ -1,5 +1,5 @@
 import ServicesUi from "../UI/ServicesUi";
-import servicesImage from "../assets/Website_NewCrystalHospital_1200x800px.jpg";
+import servicesImage from "../assets/P7.jpg";
 function ServiceComponent() {
   return (
     <div>

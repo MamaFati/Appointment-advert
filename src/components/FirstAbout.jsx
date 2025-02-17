@@ -34,6 +34,10 @@ const FirstAbout = () => {
             <button className="text-white border-2 rounded-md border-white px-4 py-2 hover:bg-white hover:text-[#1077cc] transition-all duration-300">
               Make an Appointment
             </button>
+            // <BottomUi
+            //   text="Make an Appointment"
+            //   className="text-white border-2 border-white px-4 py-2 hover:bg-white hover:text-[#1077cc] transition-all duration-300"
+            // />
           }
         />
         <FirstAboutUI

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo-grey.png";
 
 function NavBar() {
@@ -11,9 +12,14 @@ function NavBar() {
   return (
     <nav className="bg-white shadow-lg fixed top-0 left-0 right-0 z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="#" className="flex items-center space-x-3 rtl:space-x-reverse">
+        <NavLink
+          to="/"
+          className="flex items-center space-x-3 rtl:space-x-reverse"
+        >
           <img src={logo} className="h-8" alt="Our Logo" />
-        </a>
+        </NavLink>
+
+        {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
           type="button"
@@ -37,43 +43,59 @@ function NavBar() {
             />
           </svg>
         </button>
+
+        {/* Navigation Links */}
         <div
           className={`w-full md:block md:w-auto ${isOpen ? "block" : "hidden"}`}
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:text-blue-700 md:p-0"
-                aria-current="page"
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "text-blue-700 font-bold" : "text-gray-900"
+                }
               >
                 Home
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "text-blue-700 font-bold" : "text-gray-900"
+                }
               >
                 About
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              <NavLink
+                to="/services"
+                className={({ isActive }) =>
+                  isActive ? "text-blue-700 font-bold" : "text-gray-900"
+                }
               >
                 Services
-              </a>
+              </NavLink>
             </li>
             <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "text-blue-700 font-bold" : "text-gray-900"
+                }
               >
                 Contact
-              </a>
+              </NavLink>
+            </li>
+            <li>
+              <NavLink to="/appointment">
+                <button className="block py-1 px-2 text-white rounded-sm bg-[#36a8eb] hover:bg-gray-100 md:hover:bg-transparent transition-all duration-300">
+                  Make an Appointment
+                </button>
+              </NavLink>
             </li>
           </ul>
         </div>

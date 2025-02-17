@@ -1,40 +1,23 @@
-import CarouselComponent from "./components/Carousel";
-import NavBar from "./components/ Header";
-import FirstAbout from "./components/FirstAbout";
-import ServiceComponent from "./components/ServiceComponent";
-import OtherServices from "./components/OtherServices";
-import ServicesUi from "./UI/ServicesUi";
-import servicesImage from "./assets/website_700x700_service.png";
-import AboutUs from "./components/AboutUs";
-// import PhilosophySection from "./components/ PhilosophySection";
-import NewsSection from "./components/NewsSection";
-import Footer from "./components/Footer";
-import TestimonialCarousel from "./components/TestimonialSection";
+import AboutUs from "./pages/MoreAboutUs";
+import NavBar from "./components/ Header.jsx";
+
+import MainApp from "./MainApp";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import OurServices from "./pages/OurServices.jsx";
+import ContactUs from "./pages/ContactUs.jsx";
 function App() {
   return (
     <>
-      <body>
+      <Router>
         <NavBar />
-        <div className="flex flex-col items-center justify-center">
-          <CarouselComponent />
-          <FirstAbout />
-        </div>
-        <ServiceComponent />
-        <OtherServices />
-        <ServicesUi
-          title="Revolutionizing Patient Treatment"
-          description1="At New Crystal Hospital, we prioritize the latest advancements and best practices in medical treatment. Our innovative approach ensures that you receive the highest quality care tailored to your unique needs. From cutting-edge technology to personalized treatment plans, we strive to enhance your health and well-being through continuous improvement and compassionate care."
-          image={servicesImage}
-          className="flex flex-col-reverse items-center w-full m-auto gap-8 lg:flex-row-reverse"
-          ImgClass="w-[80%]"
-          textClass="lg:w-[50%] w-full lg:ml-40 m-auto"
-        />
-        <AboutUs />
-        {/* <PhilosophySection /> */}
-        <TestimonialCarousel />
-        <NewsSection />
-        <Footer />
-      </body>
+        <Routes>
+          <Route path="/" element={<MainApp />} />
+          <Route path="/about" element={<AboutUs />} />
+          <Route path="/services" element={<OurServices />} />
+          <Route path="/contact" element={<ContactUs />} />
+          <Route path="/appointment" element={<MainApp />} />
+        </Routes>
+      </Router>
     </>
   );
 }

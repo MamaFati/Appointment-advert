@@ -1,5 +1,5 @@
 import "react";
-import DoctorImg from "../assets/homepage_about.png";
+import DoctorImg from "../assets/P4.jpg";
 
 const AboutUs = () => {
   return (
