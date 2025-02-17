@@ -9,12 +9,17 @@ function NavBar() {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
     <nav className="bg-white shadow-lg fixed top-0 left-0 right-0 z-50">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <NavLink
           to="/"
           className="flex items-center space-x-3 rtl:space-x-reverse"
+          onClick={closeMenu} // Close menu when logo is clicked
         >
           <img src={logo} className="h-8" alt="Our Logo" />
         </NavLink>
@@ -50,48 +55,52 @@ function NavBar() {
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
-            <li>
+            <li className="mb-2 md:mb-0">
               <NavLink
                 to="/"
                 className={({ isActive }) =>
-                  isActive ? "text-blue-700 font-bold" : "text-gray-900"
+                  isActive ? "text-blue-500 font-bold" : "text-gray-900"
                 }
+                onClick={closeMenu} // Close menu when link is clicked
               >
                 Home
               </NavLink>
             </li>
-            <li>
+            <li className="mb-2 md:mb-0">
               <NavLink
                 to="/about"
                 className={({ isActive }) =>
-                  isActive ? "text-blue-700 font-bold" : "text-gray-900"
+                  isActive ? "text-blue-500 font-bold" : "text-gray-900"
                 }
+                onClick={closeMenu} // Close menu when link is clicked
               >
                 About
               </NavLink>
             </li>
-            <li>
+            <li className="mb-2 md:mb-0">
               <NavLink
                 to="/services"
                 className={({ isActive }) =>
-                  isActive ? "text-blue-700 font-bold" : "text-gray-900"
+                  isActive ? "text-blue-500 font-bold" : "text-gray-900"
                 }
+                onClick={closeMenu} // Close menu when link is clicked
               >
                 Services
               </NavLink>
             </li>
-            <li>
+            <li className="mb-2 md:mb-0">
               <NavLink
                 to="/contact"
                 className={({ isActive }) =>
-                  isActive ? "text-blue-700 font-bold" : "text-gray-900"
+                  isActive ? "text-blue-500 font-bold" : "text-gray-900"
                 }
+                onClick={closeMenu} // Close menu when link is clicked
               >
                 Contact
               </NavLink>
             </li>
-            <li>
-              <NavLink to="/appointment">
+            <li className="mb-2 md:mb-0">
+              <NavLink to="/appointment" onClick={closeMenu}>
                 <button className="block py-1 px-2 text-white rounded-sm bg-[#36a8eb] hover:bg-gray-100 md:hover:bg-transparent transition-all duration-300">
                   Make an Appointment
                 </button>

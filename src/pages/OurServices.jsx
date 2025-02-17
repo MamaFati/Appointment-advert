@@ -4,9 +4,9 @@ import backgroundImage from "../assets/13313271_v870-tang-36.jpg";
 const OurServices = () => {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat text-white py-12 md:py-20"
+      className="relative bg-cover mt-16 bg-center bg-no-repeat text-white py-12 md:py-20"
       style={{
-        backgroundImage: `  url(${backgroundImage})`,
+        backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(${backgroundImage})`,
       }}
     >
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -15,7 +15,7 @@ const OurServices = () => {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 uppercase tracking-wide text-[#36a8eb]">
             Our Services
           </h2>
-          <p className="text-base sm:text-lg max-w-2xl mx-auto leading-relaxed text-gray-500">
+          <p className="text-base sm:text-lg max-w-2xl mx-auto leading-relaxed text-gray-200">
             At{" "}
             <span className="font-bold text-[#36a8eb]">
               New Crystal Health Services
@@ -41,42 +41,42 @@ const OurServices = () => {
               content:
                 "Advanced care in cardiology, orthopedics, neurology, and more.",
               icon: "💉",
-              bgColor: "bg-[#ff6b6b]",
+              bgColor: "bg-[#4CAF50]",
             },
             {
               title: "Diagnostic & Imaging",
               content:
                 "Cutting-edge technology for accurate and timely diagnoses.",
               icon: "📷",
-              bgColor: "bg-[#4ecdc4]",
+              bgColor: "bg-[#2196F3]",
             },
             {
               title: "Wellness Programs",
               content:
                 "Holistic programs to promote long-term health and prevent illnesses.",
               icon: "🏋️‍♂️",
-              bgColor: "bg-[#f9c74f]",
+              bgColor: "bg-[#36a8eb]",
             },
             {
               title: "Emergency Care",
               content:
                 "24/7 emergency services with a team of skilled professionals.",
               icon: "🚑",
-              bgColor: "bg-[#ff7f50]",
+              bgColor: "bg-[#4CAF50]",
             },
             {
               title: "Telemedicine",
               content:
                 "Virtual consultations and remote monitoring for convenient care.",
               icon: "📱",
-              bgColor: "bg-[#9a8c98]",
+              bgColor: "bg-[#2196F3]",
             },
           ].map(({ title, content, icon, bgColor }, index) => (
             <div
               key={index}
               className={`${bgColor} p-6 sm:p-8 rounded-2xl shadow-2xl transform transition-all hover:scale-105 hover:shadow-3xl`}
             >
-              <div className="text-3xl sm:text-4xl mb-4">{icon}</div>
+              <div className="text-3xl sm:text-4xl mb-4 text-white">{icon}</div>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
                 {title}
               </h3>
@@ -137,10 +137,10 @@ const OurServices = () => {
                 key={index}
                 className="bg-white bg-opacity-20 p-6 sm:p-8 rounded-2xl"
               >
-                <h4 className="text-xl sm:text-2xl font-bold text-[#36a8eb] mb-4">
+                <h4 className="text-xl sm:text-2xl font-bold text-[#36a8eb] mb-2">
                   {title}
                 </h4>
-                <p className="text-sm sm:text-base text-gray-900 mb-4">
+                <p className="text-sm sm:text-base text-gray-900 mb-2">
                   {description}
                 </p>
                 <ul className="list-disc list-inside text-sm sm:text-base text-gray-800">

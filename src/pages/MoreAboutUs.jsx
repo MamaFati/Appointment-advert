@@ -4,7 +4,7 @@ import backgroundImage from "../assets/health-still-life-with-copy-space.jpg";
 const AboutUs = () => {
   return (
     <section
-      className="relative bg-cover bg-center bg-no-repeat text-white py-20"
+      className="relative bg-cover bg-center bg-no-repeat text-white mt-16 py-20"
       style={{
         backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url(${backgroundImage})`,
       }}
