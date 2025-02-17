@@ -38,7 +38,7 @@ const ContactUs = () => {
             },
             {
               title: "Address",
-              content: "123 Health Street, Accra, Ghana",
+              content: " Adum, Kumasi, Ghana",
               icon: "📍",
               bgColor: "bg-[#2196F3]",
             },
