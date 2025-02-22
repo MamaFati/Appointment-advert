@@ -8,7 +8,7 @@ import ServicesUi from "./UI/ServicesUi";
 import servicesImage from "./assets/P3.jpg";
 import AboutUs from "./components/AboutUs";
 import NewsSection from "./components/NewsSection";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import TestimonialCarousel from "./components/TestimonialSection";
 
 const MainApp = () => {
@@ -33,7 +33,7 @@ const MainApp = () => {
       {/* <PhilosophySection /> */}
       <TestimonialCarousel />
       <NewsSection />
-      <Footer />
+      {/* <Footer /> */}
     </body>
   );
 };

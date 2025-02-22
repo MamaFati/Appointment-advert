@@ -27,32 +27,38 @@ const ContactUs = () => {
             {
               title: "Phone",
               content: "+233 55 807 5940",
+              href: "tel:+233558075940",
               icon: "📞",
               bgColor: "bg-[#36a8eb]",
             },
             {
               title: "Email",
               content: "support@mail.com",
+              href: "mailto:support@mail.com",
               icon: "📧",
               bgColor: "bg-[#4CAF50]",
             },
             {
               title: "Address",
-              content: " Adum, Kumasi, Ghana",
+              content: "Adum, Kumasi, Ghana",
+              href: "https://www.google.com/maps/search/?api=1&query=Adum+Kumasi+Ghana",
               icon: "📍",
               bgColor: "bg-[#2196F3]",
             },
-          ].map(({ title, content, icon, bgColor }, index) => (
-            <div
+          ].map(({ title, content, href, icon, bgColor }, index) => (
+            <a
               key={index}
-              className={`${bgColor} p-6 sm:p-8 rounded-2xl shadow-2xl transform transition-all hover:scale-105 hover:shadow-3xl`}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${bgColor} p-6 sm:p-8 rounded-2xl shadow-2xl transform transition-all hover:scale-105 hover:shadow-3xl block`}
             >
               <div className="text-3xl sm:text-4xl mb-4 text-white">{icon}</div>
               <h3 className="text-xl sm:text-2xl font-bold text-white mb-4">
                 {title}
               </h3>
               <p className="text-sm sm:text-base text-gray-100">{content}</p>
-            </div>
+            </a>
           ))}
         </div>
 
@@ -75,7 +81,7 @@ const ContactUs = () => {
                   id="name"
                   name="name"
                   className="mt-1 block w-full p-3 rounded-lg bg-white bg-opacity-20 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#36a8eb]"
-                  placeholder="Your Name"
+                  placeholder="Esther"
                   required
                 />
               </div>
@@ -91,7 +97,7 @@ const ContactUs = () => {
                   id="email"
                   name="email"
                   className="mt-1 block w-full p-3 rounded-lg bg-white bg-opacity-20 text-gray-500 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#36a8eb]"
-                  placeholder="Your Email"
+                  placeholder="g4u9o@example.com"
                   required
                 />
               </div>
@@ -131,7 +137,7 @@ const ContactUs = () => {
             <div className="text-center">
               <button
                 type="submit"
-                className="bg-white text-[#36a8eb] px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold hover:bg-[#2d8ac7] transition-all"
+                className="bg-white cursor-pointer text-[#36a8eb] px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold hover:bg-gray-200 hover:text-[#2d8ac7]  transition-all"
               >
                 Send Message
               </button>
@@ -148,9 +154,14 @@ const ContactUs = () => {
             We’re located at Adum, Kumasi, Ghana. Feel free to drop by or
             contact us for more information.
           </p>
-          <button className="bg-white text-[#36a8eb] px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold hover:bg-gray-100 transition-all">
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Adum+Kumasi+Ghana"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-white text-[#36a8eb] px-6 py-2 sm:px-8 sm:py-3 rounded-full font-semibold hover:bg-gray-100 transition-all"
+          >
             Get Directions
-          </button>
+          </a>
         </div>
       </div>
     </section>
