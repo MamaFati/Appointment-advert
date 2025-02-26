@@ -1,6 +1,6 @@
 import "react";
 import image1 from "../assets/cssd.png";
-import image2 from "../assets/P8.jpg";
+import image2 from "../assets/cancer.jpeg";
 import image3 from "../assets/Mental Health.jpg";
 
 const News = () => {

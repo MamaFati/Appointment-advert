@@ -83,7 +83,7 @@ function NavBar() {
                 className={({ isActive }) =>
                   isActive ? "text-blue-500 font-bold" : "text-gray-900"
                 }
-                onClick={closeMenu} // Close menu when link is clicked
+                onClick={closeMenu}
               >
                 Services
               </NavLink>
@@ -94,14 +94,14 @@ function NavBar() {
                 className={({ isActive }) =>
                   isActive ? "text-blue-500 font-bold" : "text-gray-900"
                 }
-                onClick={closeMenu} // Close menu when link is clicked
+                onClick={closeMenu}
               >
                 Contact
               </NavLink>
             </li>
             <li className="mb-2 md:mb-0">
               <NavLink to="/appointment" onClick={closeMenu}>
-                <button className="block py-1 px-2 text-white rounded-sm bg-[#36a8eb] hover:bg-gray-100 md:hover:bg-transparent transition-all duration-300">
+                <button className="block py-1 px-2 text-white rounded-sm bg-[#36a8eb] hover:bg-green-500  transition-all duration-300">
                   Make an Appointment
                 </button>
               </NavLink>

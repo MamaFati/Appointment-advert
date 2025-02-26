@@ -44,7 +44,7 @@ function Carousel() {
           src={slides[currentIndex].image}
           alt="Slide"
           rounded-2xl
-          className=" md:h-dvh lg:h-dvh object-fit-cover md:object-fit-cover"
+          className=" md:h-dvh lg:h-dvh object-fit-cover  "
           initial={{ opacity: 0, x: 100 }}
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -100 }}

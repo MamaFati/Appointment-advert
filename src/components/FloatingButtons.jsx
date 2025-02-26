@@ -33,7 +33,6 @@ const FloatingButtons = () => {
 
   return (
     <div className="fixed bottom-6 right-6 flex flex-col items-center gap-4 z-50">
-      {/* WhatsApp Icon */}
       <a
         href="https://wa.me/+555940407"
         target="_blank"
@@ -43,7 +42,6 @@ const FloatingButtons = () => {
         <FaWhatsapp size={24} />
       </a>
 
-      {/* Scroll Up/Down Button */}
       <button
         onClick={handleScroll}
         className="bg-blue-500 text-white p-4 rounded-full shadow-lg hover:bg-blue-600 transition-all"

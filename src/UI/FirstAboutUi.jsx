@@ -1,7 +1,7 @@
 const FirstAboutUI = ({ title, text, className, btn }) => {
   return (
     <div
-      className={`w-[95%] lg:w-[350px]  rounded-md  h-60 p-2   ${className}`}
+      className={`w-[95%] lg:w-[300px]  rounded-md   h-60 p-2   ${className}`}
     >
       <h3 className="text-2xl font-semibold mb-5">{title}</h3>
       <p className="text-white font-light">{text}</p>
