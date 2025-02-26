@@ -10,6 +10,7 @@ import AboutUs from "./components/AboutUs";
 import NewsSection from "./components/NewsSection";
 // import Footer from "./components/Footer";
 import TestimonialCarousel from "./components/TestimonialSection";
+import FloatingButtons from "./components/FloatingButtons";
 
 const MainApp = () => {
   return (
@@ -30,10 +31,9 @@ const MainApp = () => {
         textClass="lg:w-[50%] w-full lg:ml-40 m-auto"
       />
       <AboutUs />
-      {/* <PhilosophySection /> */}
+      <FloatingButtons />
       <TestimonialCarousel />
       <NewsSection />
-      {/* <Footer /> */}
     </body>
   );
 };
