@@ -21,16 +21,16 @@ const FirstAbout = () => {
           text={
             <>
               <p>
-                Mon - Wed <strong>6:00 AM - 6:00 AM</strong>
+                Mon - Wed <strong>6:00 AM - 6:00 PM</strong>
               </p>
               <p>
-                Thursday <strong>6:00 AM - 6:00 AM</strong>
+                Thursday <strong>6:00 AM - 6:00 PM</strong>
               </p>
               <p>
-                Friday <strong>6:00 AM - 6:00 AM</strong>
+                Friday <strong>6:00 AM - 6:00 PM</strong>
               </p>
               <p>
-                Sat - Sun <strong>6:00 AM - 6:00 AM</strong>
+                Sat - Sun <strong>6:00 AM - 6:00 PM</strong>
               </p>
             </>
           }
