@@ -5,6 +5,7 @@ import MainApp from "./MainApp";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import OurServices from "./pages/OurServices.jsx";
 import ContactUs from "./pages/ContactUs.jsx";
+import NotFoundPage from "./components/PageNotFound.jsx";
 function App() {
   return (
     <>
@@ -15,7 +16,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/services" element={<OurServices />} />
           <Route path="/contact" element={<ContactUs />} />
-          <Route path="/appointment" element={<MainApp />} />
+          <Route path="/appointment" element={<NotFoundPage />} />
         </Routes>
         <Footer />
       </Router>

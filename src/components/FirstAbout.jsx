@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import FirstAboutUI from "../UI/FirstAboutUi";
 
 const FirstAbout = () => {
@@ -60,9 +61,11 @@ const FirstAbout = () => {
           }
           className="bg-[#1077cc] text-white min-h-[180px] lg:rounded-none py-2 break-words leading-relaxed flex flex-col justify-between"
           btn={
-            <button className="text-white border-2 rounded-md border-white px-4 py-2 hover:bg-white hover:text-[#1077cc] transition-all duration-300">
-              Make an Appointment
-            </button>
+            <Link to="/appointment">
+              <button className="text-white border-2 rounded-md border-white px-4 py-2 hover:bg-white hover:text-[#1077cc] transition-all duration-300">
+                Make an Appointment
+              </button>
+            </Link>
           }
         />
         <FirstAboutUI

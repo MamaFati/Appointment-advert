@@ -1,6 +1,7 @@
 import "react";
 import image1 from "../assets/cssd.png";
 import image2 from "../assets/cancer.jpeg";
+import { Link } from "react-router-dom";
 import image3 from "../assets/Mental Health.jpg";
 
 const News = () => {
@@ -69,9 +70,11 @@ const News = () => {
               <h3 className="text-xl font-bold mb-2">{item.title}</h3>
               <p className="text-gray-600 mb-4">{item.description}</p>
               <p className="text-sm text-gray-500">{item.date}</p>
-              <button className="mt-4 text-blue-500 font-semibold hover:underline">
-                Read More
-              </button>
+              <Link to="/services">
+                <button className="mt-4 text-blue-500 font-semibold hover:underline">
+                  Read More
+                </button>
+              </Link>
             </div>
           ))}
         </div>

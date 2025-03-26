@@ -1,5 +1,6 @@
 import "react";
 import DoctorImg from "../assets/P4.jpg";
+import { Link } from "react-router-dom";
 
 const AboutUs = () => {
   return (
@@ -31,9 +32,11 @@ const AboutUs = () => {
             a long way in providing high-quality, safe, and effective care to
             our communities.
           </p>
-          <button className="bg-blue-500 text-white px-6 py-2 border-2 border-white rounded-lg   hover:bg-blue-600 transition duration-200">
-            Find Out More
-          </button>
+          <Link to="/about">
+            <button className="bg-blue-500 text-white px-6 py-2 border-2 border-white rounded-lg   hover:bg-blue-600 transition duration-200">
+              Find Out More
+            </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -92,10 +92,22 @@ const QuickLinks = () => {
 
 const SocialLinks = () => {
   const socialIcons = [
-    { icon: <FaFacebook size={24} />, link: "#" },
-    { icon: <FaTwitter size={24} />, link: "#" },
-    { icon: <FaInstagram size={24} />, link: "#" },
-    { icon: <FaLinkedin size={24} />, link: "#" },
+    {
+      icon: <FaFacebook size={24} />,
+      link: "https://www.facebook.com/newcrystalhospital",
+    },
+    {
+      icon: <FaTwitter size={24} />,
+      link: "https://www.x.com/newcrystalhospital",
+    },
+    {
+      icon: <FaInstagram size={24} />,
+      link: "https://www.instagram.com/newcrystalgroup",
+    },
+    {
+      icon: <FaLinkedin size={24} />,
+      link: "https://www.Linkedin.com/newcrystalhospital",
+    },
   ];
 
   return (
@@ -104,6 +116,7 @@ const SocialLinks = () => {
       <div className="flex justify-center md:justify-end space-x-4">
         {socialIcons.map(({ icon, link }, index) => (
           <a
+            target="_blank"
             key={index}
             href={link}
             className="text-gray-400 hover:text-white transition-colors duration-300"

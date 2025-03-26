@@ -1,6 +1,7 @@
 import "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
+import { Link } from "react-router-dom";
 import "slick-carousel/slick/slick-theme.css";
 
 const services = [
@@ -114,9 +115,11 @@ const OtherServices = () => {
               <p className="text-sm text-gray-600 mt-2">
                 {service.description}
               </p>
-              <button className="mt-4 text-blue-500 font-semibold hover:underline">
-                READ MORE
-              </button>
+              <Link to="/services">
+                <button className="mt-4 text-blue-500 font-semibold hover:underline">
+                  READ MORE
+                </button>
+              </Link>
             </div>
           ))}
         </Slider>
